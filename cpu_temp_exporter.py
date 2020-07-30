@@ -17,4 +17,4 @@ if __name__ == '__main__':
         sensors = os.popen('/usr/bin/sensors|grep ^Tctl').readline()
         temp = (sensors.replace('Tctl:         +', '').replace('°C', ''))
         g.set(float(temp))
-        process_request(1)
+        process_request(5)
